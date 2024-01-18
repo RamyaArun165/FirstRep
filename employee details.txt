@@ -1,0 +1,43 @@
+// Online C# Editor for free
+// Write, Edit and Run your C# code using C# Online Compiler
+
+using System;
+
+class Employee
+{
+    int empid;
+    string name, dsgn, dept;
+    
+    public void ReadValue()
+    {
+        Console.WriteLine("Enter Employee id:");
+        empid=Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Enter Name:");
+        name=Console.ReadLine();
+        Console.WriteLine("Enter Designation:");
+        dsgn=Console.ReadLine();
+        Console.WriteLine("Enter Department:");
+        dept=Console.ReadLine();
+    }
+    
+    public void Compute()
+    {
+        Console.WriteLine("Employee ID is {0}",empid);
+        Console.WriteLine("Name is {0}",name);
+        Console.WriteLine("Designation is {0}",dsgn);
+        Console.WriteLine("Department is {0}",dept);
+    }
+}
+
+public class HelloWorld
+{
+    public static void Main(string[] args)
+    {
+        Console.WriteLine("Hello Mono World");
+        
+        Employee temp=new Employee();
+        temp.ReadValue();
+        temp.Compute();
+    
+    }
+}
